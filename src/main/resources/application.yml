@@ -1,0 +1,19 @@
+spring:
+  application:
+    name:picpay_clone
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:54327/picpay_clone
+    username: postgres
+    password: Postgres2019!
+    initialization_mode: always
+    api:
+      versao: 1.0.0
+    #JPA Properties
+    jpa:
+      hibernate:
+        ddl_auto: update
+        show-sql: true
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
